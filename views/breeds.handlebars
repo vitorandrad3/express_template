@@ -1,0 +1,14 @@
+<h1>Lista de Cachorros</h1>
+<ul>
+    {{#each dogs}}
+    <li>
+        <h1>detalhes:</h1>
+        <h2>o nome completo: {{name}}</h2>
+        <h2>altura: {{height.metric}}</h2>
+        <h2>espectativa de vida: {{life_span}}</h2>
+        <h2>origem: {{origin}}</h2>
+        <h2>temperamento: {{temperament}}</h2>
+        <img src="https://cdn2.thedogapi.com/images/{{reference_image_id}}.jpg" alt="foto do cachorro", width="300" height="200">
+    </li>
+    {{/each}}
+</ul>
